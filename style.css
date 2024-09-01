@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --fonte: 'Mukta', arial;
+
+    --cor0: #8beba0;
+    --cor1: #87ee8c;
+    --cor2: #50CC56;
+    --cor3: #489c4c85;
+    --cor4: #00311a;
+    --cor5: #094A08;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor4);
+}
+
+.home{
+    padding: 15px;
+    text-align: center;
+    font-weight: bolder;
+    box-shadow: outset 10px 10px 10px black;
+}
+
+.home h1{
+    font-family: var(--fonte);
+    font-weight: bolder;
+    font-size: 3.5em;
+    font-variant: small-caps;
+    color: rgb(224, 224, 224);
+    box-shadow: outset 10px 10px 10px black;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 76vh;
+}
+
+.container div{
+    width: 100px;
+    flex-grow: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+div#div1{  
+    background: var(--cor2) url(imagens/992454.jpg) right top/cover no-repeat;
+    opacity: 0.4;
+}
+div#div2{
+
+    background: var(--cor3) url(imagens/onde-ver-a-aurora-boreal-9-paises-para-ver-esse-fenomeno-da-natureza.jpg) center top/cover no-repeat;
+    opacity: 0.4;
+}
+div#div3{
+    background: var(--cor0) url(imagens/360_F_332753934_tBacXEgxnVplFBRyKbCif49jh0Wz89ns.jpg) center center/cover no-repeat;
+    opacity: 0.4;
+}
+div#div4{
+    background: var(--cor5) url(imagens/floresta.jpg) center top/cover no-repeat;
+    opacity: 0.4;
+}
+
+.container div:hover{
+    flex-grow: 3;
+}
+
+.container div#div1:hover, #div2:hover, #div3:hover, #div4:hover {
+    opacity: 1;
+}
+
+
